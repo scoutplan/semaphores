@@ -19,7 +19,6 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_06_153825) do
 
   create_table "semaphores_readings", force: :cascade do |t|
     t.integer "announcement_id"
-    t.string "reader_type"
     t.integer "reader_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
